@@ -36,3 +36,5 @@ coverage
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+
+wrangler.dev.toml

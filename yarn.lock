@@ -438,6 +438,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tsndr/cloudflare-worker-jwt@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@tsndr/cloudflare-worker-jwt@npm:2.2.1"
+  checksum: 78bb843b6b1684052ea5403086c761112fbbc02a9f30344d75f3f6570fed130d6c4e28b85c3a64355482cc2937b040d1f02fbdb8b984a6e6eb66142666b36003
+  languageName: node
+  linkType: hard
+
 "@types/better-sqlite3@npm:^7.6.0":
   version: 7.6.4
   resolution: "@types/better-sqlite3@npm:7.6.4"
@@ -451,6 +458,15 @@ __metadata:
   version: 20.1.4
   resolution: "@types/node@npm:20.1.4"
   checksum: bffa6a6e92831cc805b13658c55be8e04abe3202d5e57ddd7fee4cfbe269656a1f475909a9f9514e1aff50310d0d90c516ac2c649cb6f1c77d4b1079c2fd1e88
+  languageName: node
+  linkType: hard
+
+"@types/qr-image@npm:^3.2.5":
+  version: 3.2.5
+  resolution: "@types/qr-image@npm:3.2.5"
+  dependencies:
+    "@types/node": "*"
+  checksum: 5b197ea858499ad95cd99fb457981dfe7b750f1301246f3f9944515c2d42f662746290525b564dbd79ecc2176632b2dd399d499a9a2552f4b7125395ae286a26
   languageName: node
   linkType: hard
 
@@ -515,13 +531,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"apns2@npm:^11.2.0":
+"apns2@https://github.com/qiaoshouzi/cloudflare-worker-apns2.git":
   version: 11.2.0
-  resolution: "apns2@npm:11.2.0"
+  resolution: "apns2@https://github.com/qiaoshouzi/cloudflare-worker-apns2.git#commit=7fa81c15f2c392a12fa09b0ec9ca6927262ece23"
   dependencies:
+    "@tsndr/cloudflare-worker-jwt": ^2.2.1
     fetch-http2: ^1.0.5
     jsonwebtoken: ^9.0.0
-  checksum: 9f882b5bba446defff522bfcc20d177cf6f3f88ebafc0c2305f4f3bb687befa266bebb53072cca5fedf2dd42d6ad44bb1a1131c2eafe1a45b611bef792f4182c
+  checksum: ccb4b30ecd1142ba21a139ba7a1fc83dc21a78a4ea67b4d8f45cd746cd3d9f1ceb06edd1576f52596e8d613e820d8787ab0b810adcad78f639c09c20ddd9b2d0
   languageName: node
   linkType: hard
 
@@ -549,12 +566,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bark-server-js@workspace:.":
+"bark-server-cloudflare-workers@workspace:.":
   version: 0.0.0-use.local
-  resolution: "bark-server-js@workspace:."
+  resolution: "bark-server-cloudflare-workers@workspace:."
   dependencies:
     "@cloudflare/workers-types": ^4.20230511.0
-    apns2: ^11.2.0
+    "@types/qr-image": ^3.2.5
+    apns2: "https://github.com/qiaoshouzi/cloudflare-worker-apns2.git"
+    nanoid: ^4.0.2
+    qr-image: ^3.2.0
     typescript: ^5.0.4
     wrangler: 2.20.0
   languageName: unknown
@@ -1507,6 +1527,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nanoid@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "nanoid@npm:4.0.2"
+  bin:
+    nanoid: bin/nanoid.js
+  checksum: 747c399cea4664dd0be1d0ec498ffd1ef8f1f5221676fc8b577e3f46f66d9afcddb9595d63d19a2e78d0bc6cc33984f65e66bf1682c850b9e26288883d96b53f
+  languageName: node
+  linkType: hard
+
 "negotiator@npm:^0.6.3":
   version: 0.6.3
   resolution: "negotiator@npm:0.6.3"
@@ -1675,6 +1704,13 @@ __metadata:
     err-code: ^2.0.2
     retry: ^0.12.0
   checksum: f96a3f6d90b92b568a26f71e966cbbc0f63ab85ea6ff6c81284dc869b41510e6cdef99b6b65f9030f0db422bf7c96652a3fff9f2e8fb4a0f069d8f4430359429
+  languageName: node
+  linkType: hard
+
+"qr-image@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "qr-image@npm:3.2.0"
+  checksum: 9d22d9425234b8dfbcf954cff334d1594aa7391f999b15cf3e07d554c99341e7c2303646ddf58237fc498455c11d505b8803a995ff22d8385ddd05f58b3259b5
   languageName: node
   linkType: hard
 

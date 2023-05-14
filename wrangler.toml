@@ -1,3 +1,9 @@
 name = "bark-server"
 main = "src/index.ts"
 compatibility_date = "2023-05-14"
+node_compat = true
+
+[[d1_databases]]
+binding = ""
+database_name = ""
+database_id = ""
